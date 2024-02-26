@@ -2,7 +2,6 @@ use rusqlite::{Connection, Result};
 use std::collections::HashMap;
 use web_view::*;
 
-// Definición de la estructura Producto
 struct Producto {
     nombre: String,
     descripcion: String,

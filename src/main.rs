@@ -235,7 +235,6 @@ impl GestorUsuarios {
     }
 }
 
-// Función para limpiar la consola
 fn limpiar_consola() {
     print!("{}[2J", 27 as char);
 }
@@ -306,7 +305,7 @@ fn mostrar_ventana_emergente() {
         .unwrap();
 }
 
-// Función principal que contiene la interfaz de usuario en la consola
+// Main que tiene los menus y logica general junto con el match para la seleccion del usuario
 fn main() {
     let conn = rusqlite::Connection::open("users.db").expect("Error al abrir la base de datos");
     let mut gestor_productos = GestorProductos::new();
